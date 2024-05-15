@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog'
 
 
 
-const Blogs = ({handleAddBookmark}) => {
+const Blogs = ({handleAddBookmark, handleMarkAsRead}) => {
     const [blogs, setBlogs]= useState([]);
 
     useEffect(() =>{
@@ -22,6 +22,7 @@ const Blogs = ({handleAddBookmark}) => {
                     key={blog.id} 
                     blog={blog}
                     handleAddBookmark={handleAddBookmark}
+                    handleMarkAsRead={handleMarkAsRead}
                     ></Blog> )
             }
         

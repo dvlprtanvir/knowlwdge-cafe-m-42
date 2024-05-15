@@ -3,11 +3,11 @@ import propTypes from 'prop-types';
 import { FcBookmark } from "react-icons/fc";
 
 
-const Blog = ({blog, handleAddBookmark }) => {
+const Blog = ({blog, handleAddBookmark,handleMarkAsRead }) => {
     // console.log(blog)
-    const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
+    const {title, cover, author, author_img, posted_date, reading_time, hashtags, id} = blog;
     return (
-        <div className='mb-20 border-8 rounded-2xl'>
+        <div className='mb-20 border-8 rounded-2xl space-y-4'>
             <img className='w-full' src={cover} alt={`cover pic of the ${title}`} />
             <div className='flex justify-between'>
                 <div className='flex '>
@@ -28,6 +28,9 @@ const Blog = ({blog, handleAddBookmark }) => {
                     hashtags.map((hash, idx) => <span key={idx}> <a href="">#{hash}</a> </span> )
                 }
             </p>
+            <button
+                onClick={() => handleMarkAsRead(id, reading_time)}            
+            className='text-purple-700 font-bold  underline'>Mark as Read</button>
         </div>
     );
 };
