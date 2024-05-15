@@ -1,7 +1,9 @@
 import propTypes from 'prop-types'; 
+// import { FaBeer } from 'react-icons/fa';
+import { FcBookmark } from "react-icons/fc";
 
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddBookmark }) => {
     // console.log(blog)
     const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
     return (
@@ -17,13 +19,13 @@ const Blog = ({blog}) => {
                 </div>
                 <div>
                     <span>{reading_time} min read</span>
-                    <button>Boolmark</button>
+                    <button onClick={() => handleAddBookmark(blog) } className='ml-2 text-2xl'><FcBookmark /></button>
                 </div>
             </div>
             <h1 className="text-4xl my-5">{title}</h1>
             <p>
                 {
-                    // hashtags.map((hash, idx) => <span key={idx}> <a href="">#{hash}</a> </span> )
+                    hashtags.map((hash, idx) => <span key={idx}> <a href="">#{hash}</a> </span> )
                 }
             </p>
         </div>
