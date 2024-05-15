@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "cover": "https://i.ibb.co/zrcsJ3f/c1.jpg",
+        "title": "The Secret Garden",
+        "author": "Jane Doe",
+        "author_img": "https://i.ibb.co/VJmL82k/p1.png",
+        "posted_date": "May 14, 2024",
+        "reading_time": 10,
+        "hashtags": [
+            "fiction",
+            "books",
+            "reading"
+        ]
+    },
+    {
+        "id": 2,
+        "cover": "https://i.ibb.co/cJw5XHY/c2.webp",
+        "title": "The Lost City",
+        "author": "John Smith",
+        "author_img": "https://i.ibb.co/VJmL82k/p2.png",
+        "posted_date": "May 14, 2024",
+        "reading_time": 8,
+        "hashtags": [
+            "adventure",
+            "mystery",
+            "exploration"
+        ]
+    },
+    {
+        "id": 3,
+        "cover": "https://i.ibb.co/S5HZTW6/c3.png",
+        "title": "The Starship Chronicles",
+        "author": "Emily Brown",
+        "author_img": "https://i.ibb.co/VJmL82k/p3.png",
+        "posted_date": "May 14, 2024",
+        "reading_time": 12,
+        "hashtags": [
+            "scifi",
+            "space",
+            "aliens"
+        ]
+    },
+    {
+        "id": 4,
+        "cover": "https://i.ibb.co/0GTVNLc/c4.jpg",
+        "title": "Whispers in the Woods",
+        "author": "Alex Turner",
+        "author_img": "https://i.ibb.co/VJmL82k/p4.png",
+        "posted_date": "May 14, 2024",
+        "reading_time": 6,
+        "hashtags": [
+            "fantasy",
+            "magic",
+            "enchanted"
+        ]
+    },
+    {
+        "id": 5,
+        "cover": "https://i.ibb.co/1sxXq5c/c5.jpg",
+        "title": "The Quantum Paradox",
+        "author": "Sarah Lee",
+        "author_img": "https://i.ibb.co/VJmL82k/p5.png",
+        "posted_date": "May 14, 2024",
+        "reading_time": 15,
+        "hashtags": [
+            "science",
+            "philosophy",
+            "mindbending"
+        ]
+    }
+]
